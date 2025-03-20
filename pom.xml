@@ -13,9 +13,6 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
       <releases>
         <enabled>true</enabled>
       </releases>

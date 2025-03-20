@@ -5,6 +5,22 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Fibonacci</name>
   <description>Fibonacci</description>
+
+  <repositories>
+    <repository>
+      <id>artifactory</id>
+      <url>https://artifactory.build.ge.com:443/artifactory/maven-virtual</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
   
   <dependencies>
     <dependency>

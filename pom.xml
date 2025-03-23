@@ -26,7 +26,7 @@
       <version>4.13.2</version>
     </dependency>
   </dependencies>
-  
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>src/test</testSourceDirectory>
@@ -69,13 +69,14 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>com.github.spotbugs</groupId>
+        <groupID>com.github.spotbugs</groupID>
         <artifactId>spotbugs-maven-plugin</artifactId>
         <version>4.9.3.0</version>
         <configuration>
+          <effort>Max</effort>
+          <threshold>Low</threshold>
           <xmlOutput>true</xmlOutput>
-          <!-- Optional directory to put spotbugs xdoc xml report -->
-          <xmlOutputDirectory>target/site</xmlOutputDirectory>
+          <outputFile>${project.build.directory}/spotbugs/spotbugs.xml</outputFile>
         </configuration>
         <executions>
           <execution>
@@ -84,7 +85,7 @@
             </goals>
           </execution>
         </executions>
-      </plugin>      
+      </plugin>        
     </plugins>
   </build>
 </project>

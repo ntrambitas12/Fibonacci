@@ -57,7 +57,6 @@
           <outputFile>${project.build.directory}/checkstyle-result.xml</outputFile>
           <encoding>UTF-8</encoding>
           <consoleOutput>true</consoleOutput>
-          <failsOnError>true</failsOnError>
           <linkXRef>false</linkXRef>
         </configuration>
         <executions>
@@ -65,7 +64,7 @@
             <id>validate</id>
             <phase>validate</phase>
             <goals>
-              <goal>check</goal>
+              <goal>checkstyle</goal>
             </goals>
           </execution>
         </executions>

@@ -75,7 +75,8 @@
         <version>3.0.5</version>
           <configuration>
             <!-- Optional directory to put findbugs xdoc xml report -->
-            <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
+            <xmlOutputDirectory>$target/findbugs.xml</xmlOutputDirectory>
+            <xmlOutputFile>$target/findbugs.xml</xmlOutputFile>
             <xmlOutput>true</xmlOutput>
             <threshold>Low</threshold>
           </configuration>

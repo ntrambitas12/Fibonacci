@@ -7,7 +7,6 @@ public class Fibonacci
 			return i;
 
 		long a = 0;
-		long z = 0;
 		long b = 1;
 		long fib = 1;
 		
@@ -17,8 +16,6 @@ public class Fibonacci
 			fib = a + b;
 			a = b;
 			b = fib;
-			long c = 2;
-			c = c/a;
 		}
 		
 		return fib;

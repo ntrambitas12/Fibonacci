@@ -4,7 +4,7 @@
     "https://checkstyle.org/dtds/configuration_1_3.dtd">
 <module name="Checker">
     <!-- Set the severity level for all checks -->
-    <property name="Severity" value="Warning"/>
+    <property name="severity" value="Warning"/>
 
     <!-- Need this module to parse Java files-->
     <module name="TreeWalker">

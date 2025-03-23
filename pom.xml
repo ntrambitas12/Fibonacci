@@ -73,13 +73,6 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
         <version>3.0.5</version>
-          <configuration>
-            <!-- Optional directory to put findbugs xdoc xml report -->
-            <xmlOutputDirectory>$target/findbugs.xml</xmlOutputDirectory>
-            <xmlOutputFile>$target/findbugs.xml</xmlOutputFile>
-            <xmlOutput>true</xmlOutput>
-            <threshold>Low</threshold>
-          </configuration>
         <executions>
           <execution>
             <id>validate</id>
@@ -87,6 +80,13 @@
             <goals>
               <goal>check</goal>
             </goals>
+            <configuration>
+              <!-- Optional directory to put findbugs xdoc xml report -->
+              <xmlOutputDirectory>${project.build.directory}/findbugsXml.xml</xmlOutputDirectory>
+              <xmlOutputFile>${project.build.directory}/findbugsXml.xml</xmlOutputFile>
+              <xmlOutput>true</xmlOutput>
+              <threshold>Low</threshold>
+            </configuration>
           </execution>
         </executions>
       </plugin>

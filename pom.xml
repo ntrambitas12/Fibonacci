@@ -55,7 +55,6 @@
         <configuration>
           <configLocation>checkstyle.xml</configLocation>
           <outputFile>${project.build.directory}/checkstyle-result.xml</outputFile>
-          <encoding>UTF-8</encoding>
           <consoleOutput>true</consoleOutput>
           <linkXRef>false</linkXRef>
         </configuration>
@@ -69,10 +68,6 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
-  </build>
-  <reporting>
-    <plugins>
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
@@ -82,7 +77,14 @@
           <!-- Optional directory to put spotbugs xdoc xml report -->
           <xmlOutputDirectory>target/site</xmlOutputDirectory>
         </configuration>
-      </plugin>
+        <executions>
+          <execution>
+            <goals>
+              <goal>spotbugs</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>      
     </plugins>
-  </reporting>
+  </build>
 </project>

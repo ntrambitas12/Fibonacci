@@ -53,9 +53,10 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.2.2</version>
         <configuration>
-          <configLocation>checkstyle.xml</configLocation>
-          <encoding>UTF-8</encoding>
-          <failOnValidation>true</failOnValidation>
+          <configLocation>${basedir}/checkstyle.xml</configLocation>
+          <properties>
+            <encoding>UTF-8</encoding>
+          </properties>
         </configuration>
         <executions>
           <execution>
@@ -63,6 +64,9 @@
             <goals>
               <goal>check</goal>
             </goals>
+            <configuration>
+              <failOnValidation>true</failOnValidation>
+            </configuration>
           </execution>
         </executions>
       </plugin>

@@ -76,7 +76,7 @@
           <effort>Max</effort>
           <threshold>Low</threshold>
           <xmlOutput>true</xmlOutput>
-          <outputFile>${project.build.directory}/spotbugs/spotbugs.xml</outputFile>
+          <outputFile>${project.build.directory}/spotbugsXml.xml</outputFile>
         </configuration>
         <executions>
           <execution>

@@ -64,7 +64,7 @@
             <id>validate</id>
             <phase>validate</phase>
             <goals>
-              <goal>check</goal>
+              <goal>checkstyle</goal>
             </goals>
           </execution>
         </executions>
@@ -81,10 +81,10 @@
               <goal>findbugs</goal>
             </goals>
             <configuration>
+              <xmlOutput>true</xmlOutput>
               <!-- Optional directory to put findbugs xdoc xml report -->
               <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
               <xmlOutputFile>${project.build.directory}/findbugsXml.xml</xmlOutputFile>
-              <xmlOutput>true</xmlOutput>
               <threshold>Low</threshold>
             </configuration>
           </execution>

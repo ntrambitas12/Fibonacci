@@ -1,5 +1,5 @@
-import static org.junit.Assert;
-import static org.junit.Assume;
+import org.junit.Assert;
+import org.junit.Assume;
 
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;

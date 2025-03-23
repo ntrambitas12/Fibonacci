@@ -69,6 +69,26 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.6-SNAPSHOT</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+            <configuration>
+              <xmlOutput>true</xmlOutput>
+              <!-- Optional directory to put findbugs xdoc xml report -->
+              <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
+              <xmlOutputFile>${project.build.directory}/findbugsXml.xml</xmlOutputFile>
+              <threshold>Low</threshold>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>

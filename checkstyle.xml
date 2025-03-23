@@ -14,7 +14,7 @@
         <module name="JavadocMethod"/>
 
         <!-- Check for proper indentation -->
-        <module name="Indetation">
+        <module name="Indentation">
             <property name="basicOffset" value="4"/>
             <property name="braceAdjustment" value="0"/>
             <property name="caseIndent" value="4"/>
@@ -27,7 +27,7 @@
         </module>
 
         <!-- Check for unused imports -->
-        <module nmae="UnusedImports"/>
+        <module name="UnusedImports"/>
 
         <!-- Ensure there is a newline at the end of the file -->
         <module name="NewLineAtEndOfFile"/>

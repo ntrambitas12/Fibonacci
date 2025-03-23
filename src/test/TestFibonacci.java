@@ -8,6 +8,7 @@ public class TestFibonacci
 	public void test()
 	{
 		// commit test
+		assertEquals(k,);
 		assertEquals(0, Fibonacci.calculate(0));
 		assertEquals(1, Fibonacci.calculate(1));
 		assertEquals(1, Fibonacci.calculate(2));

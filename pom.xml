@@ -75,7 +75,7 @@
         <configuration>
           <effort>Max</effort>
           <xmlOutput>true</xmlOutput>
-          <failThreshold>high</failThreshold>
+          <failThreshold>High</failThreshold>
           <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
         </configuration>
         <executions>

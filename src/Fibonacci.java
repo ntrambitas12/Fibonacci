@@ -1,9 +1,5 @@
 public class Fibonacci
 {
-	/**
-	 * @param i
-	 * @return
-	 */
 	public static long calculate(long i)
 	{	
 		if (i < 2)

@@ -79,8 +79,7 @@
           </configuration>
         <executions>
           <execution>
-            <id>verify</id>
-            <phase>verify</phase>
+            <phase>package</phase>
             <goals>
               <goal>findbugs</goal>
             </goals>
@@ -89,4 +88,17 @@
       </plugin>
     </plugins>
   </build>
+  <reporting>
+      <plugins>
+          <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>findbugs-maven-plugin</artifactId>
+              <version>3.0.5</version>
+              <configuration>
+                  <xmlOutput>true</xmlOutput>
+                  <failOnError>false</failOnError>
+              </configuration>
+          </plugin>
+      </plugins>
+  <reporting>
 </project>

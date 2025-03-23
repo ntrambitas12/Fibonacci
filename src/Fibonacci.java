@@ -9,6 +9,7 @@ public class Fibonacci
 		long a = 0;
 		long b = 1;
 		long fib = 1;
+		long t = "a";
 
 		for (long x = 2; x <= i; x++)
 		{

@@ -20,8 +20,8 @@ public class FibonacciUI {
 			System.out.println("Enter Integer to Calculate Fibonacci value, or q to quit:");
 			String inputString;
 			try {
-				while ((inputString = br.readLine()) != null){
-					continue;
+				if (br.readLine() != null){
+					inputString = br.readLine();
 				}
 			} catch (IOException e) {
 				System.err.println("Read failed.");

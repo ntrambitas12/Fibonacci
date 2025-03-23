@@ -54,7 +54,7 @@
         <version>3.6.0</version>
         <configuration>
           <configLocation>checkstyle.xml</configLocation>
-          <outputFile>${project.build.directory}/checkstyle-result2.xml</outputFile>
+          <outputFile>${project.build.directory}/checkstyle-result.xml</outputFile>
           <encoding>UTF-8</encoding>
           <consoleOutput>true</consoleOutput>
           <linkXRef>false</linkXRef>
@@ -78,11 +78,11 @@
             <id>validate</id>
             <phase>validate</phase>
             <goals>
-              <goal>check</goal>
+              <goal>findbugs</goal>
             </goals>
             <configuration>
               <!-- Optional directory to put findbugs xdoc xml report -->
-              <xmlOutputDirectory>${project.build.directory}/findbugsXml.xml</xmlOutputDirectory>
+              <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
               <xmlOutputFile>${project.build.directory}/findbugsXml.xml</xmlOutputFile>
               <xmlOutput>true</xmlOutput>
               <threshold>Low</threshold>

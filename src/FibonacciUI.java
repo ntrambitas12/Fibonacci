@@ -12,7 +12,6 @@ public class FibonacciUI {
 	 */
 	public static void main(String[] args)
 	{
-		/* This is a test comment to show that exceeding the character limit will throw a checkstyle warning !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 		long input = 0, result;
 		boolean keepRunning = true;
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

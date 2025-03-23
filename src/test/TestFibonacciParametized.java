@@ -1,4 +1,4 @@
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,7 +28,7 @@ public class TestFibonacciParametized
 	@Test
 	public void test()
 	{
-		Assert.assertEquals(expected, Fibonacci.calculate(input));
+		assertEquals(expected, Fibonacci.calculate(input));
 	}
 
 }

@@ -54,7 +54,7 @@
         <version>3.6.0</version>
         <configuration>
           <configLocation>checkstyle.xml</configLocation>
-          <outputFile>${project.build.directory}/checkstyle-result.xml</outputFile>
+          <outputFile>${project.build.directory}/checkstyle-result2.xml</outputFile>
           <encoding>UTF-8</encoding>
           <consoleOutput>true</consoleOutput>
           <linkXRef>false</linkXRef>

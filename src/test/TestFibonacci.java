@@ -19,3 +19,4 @@ public class TestFibonacci
 		assertEquals(1134903170, Fibonacci.calculate(45));
 	}
 }
+

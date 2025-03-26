@@ -28,3 +28,4 @@ public class TestFibonacciTheory
 		assertEquals(Fibonacci.calculate(n - 1) + Fibonacci.calculate(n - 2), Fibonacci.calculate(n));
 	}
 }
+

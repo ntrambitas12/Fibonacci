@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 
 public class FibonacciUI {
 
@@ -14,12 +15,15 @@ public class FibonacciUI {
 	{
 		long input = 0, result;
 		boolean keepRunning = true;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
 		while (keepRunning == true) {
 			System.out.println("Enter Integer to Calculate Fibonacci value, or q to quit:");
 			String inputString;
 			try {
 				inputString = br.readLine();
+				if (inputString == null){
+					continue;
+				}
 			} catch (IOException e) {
 				System.err.println("Read failed.");
 				keepRunning = false;

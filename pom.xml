@@ -26,7 +26,7 @@
       <version>4.13.2</version>
     </dependency>
   </dependencies>
-  
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>src/test</testSourceDirectory>
@@ -73,7 +73,44 @@
                 </excludes>
             </configuration>
         </plugin>
-
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <configLocation>checkstyle.xml</configLocation>
+          <outputFile>${project.build.directory}/checkstyle-result.xml</outputFile>
+          <consoleOutput>true</consoleOutput>
+          <linkXRef>false</linkXRef>
+        </configuration>
+        <executions>
+          <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>checkstyle</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.9.3.0</version>
+        <configuration>
+          <effort>Max</effort>
+          <xmlOutput>true</xmlOutput>
+          <failThreshold>High</failThreshold>
+          <xmlOutputDirectory>${project.build.directory}</xmlOutputDirectory>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>        
     </plugins>
   </build>
 </project>

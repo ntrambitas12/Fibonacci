@@ -1,6 +1,5 @@
 public class Fibonacci
 {
-	
 	public static long calculate(long i)
 	{	
 		if (i < 2)
@@ -9,6 +8,7 @@ public class Fibonacci
 		long a = 0;
 		long b = 1;
 		long fib = 1;
+		
 
 		for (long x = 2; x <= i; x++)
 		{

@@ -12,7 +12,7 @@ public class Fibonacci
 
 		for (long x = 2; x <= i; x++)
 		{
-			fib = a + b;
+			fib = a - b;
 			a = b;
 			b = fib;
 		}

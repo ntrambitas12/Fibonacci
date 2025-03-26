@@ -1,5 +1,5 @@
-import org.junit.Assert;
-import org.junit.Assume;
+import static org.junit.Assert.*;
+import static org.junit.Assume.*;
 
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -17,14 +17,15 @@ public class TestFibonacciTheory
 	@Theory
 	public void seeds(int n)
 	{
-		Assume.assumeTrue(n <= 1); // ignores values > 1
-		Assert.assertEquals(n, Fibonacci.calculate(n));
+		assumeTrue(n <= 1); // ignores values > 1
+		assertEquals(n, Fibonacci.calculate(n));
 	}
 
 	@Theory
 	public void recurrence(int n)
 	{
-		Assume.assumeTrue(n > 1); // ignores values <= 1
-		Assert.assertEquals(Fibonacci.calculate(n - 1) + Fibonacci.calculate(n - 2), Fibonacci.calculate(n));
+		assumeTrue(n > 1); // ignores values <= 1
+		assertEquals(Fibonacci.calculate(n - 1) + Fibonacci.calculate(n - 2), Fibonacci.calculate(n));
 	}
 }
+
